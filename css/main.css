@@ -61,6 +61,7 @@ table {
 
 body {
   background-image: url("../assets/images/brushed.png");
+  font-family: arial;
 }
 
 .header {
@@ -72,7 +73,6 @@ body {
   border: 1px solid black;
   border-radius: 4px;
   font-size: 250%;
-  font-family: arial;
   margin: 0 auto;
   padding: 0.6em;
   text-align: center;
@@ -83,9 +83,21 @@ body {
   text-align: center;
 }
 
+.projects-container {
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 1.5em 0 1.5em 0;
+  width: 60%;
+}
+
 .projects h2 {
-  font-size: 150%;
-  font-family: arial;
+  font-size: 170%;
+}
+
+.projects p {
+  font-size: 120%;
 }
 
 .projects ul {
@@ -97,6 +109,6 @@ body {
 }
 
 .project-item h2 {
-  padding: 0.7em;
+  padding: 0 0 0.7em 0;
 }
 
