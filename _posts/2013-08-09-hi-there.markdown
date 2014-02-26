@@ -1,9 +1,0 @@
----
-layout: post
-title:  "hey"
-date:   2013-08-09 15:34:08
-categories: jekyll update
----
-
-im writing stuff
-

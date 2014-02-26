@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Andrew Kelly's blog
+title: Projects by Andrew Kelly
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
+<div class="projects">
+  <ul>
+    <li class="project-item">
+      <h2> <a href="#">Crime Map</a> </h2>
+      <p>Utilizing Chicago Open Data and the Google Maps API to visualize recent crimes. A work in progress.</p>
+    </li>
   </ul>
 </div>
