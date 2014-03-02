@@ -121,3 +121,13 @@ body {
   height: 35px;
   width: 35px;
 }
+
+.icon-github {
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/github.png');
+  background-size: 35px 35px;
+  display: inline-block;
+  margin: 0 0 0 0.3em;
+  height: 35px;
+  width: 35px;
+}
