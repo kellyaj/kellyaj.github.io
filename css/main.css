@@ -84,19 +84,21 @@ body {
 }
 
 .projects-container {
-  background: #fff;
-  border: 1px solid black;
-  border-radius: 4px;
-  margin: 0 auto;
-  padding: 1.5em 0 1.5em 0;
-  width: 60%;
 }
 
 .projects h2 {
+  font-family: arial;
   font-size: 170%;
 }
 
+.projects h3 {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 100%;
+  margin: 0 0 1em 0;
+}
+
 .projects p {
+  font-family: arial;
   font-size: 120%;
 }
 
@@ -106,6 +108,12 @@ body {
 
 .project-item {
   text-align: center;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 1.6em auto;
+  padding: 1.5em 0 1.5em 0;
+  width: 60%;
 }
 
 .project-item h2 {
