@@ -112,3 +112,12 @@ body {
   padding: 0 0 0.7em 0;
 }
 
+.icon-twitter {
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/twitter.svg');
+  background-size: 35px 35px;
+  display: inline-block;
+  margin: 0 0 0 0.3em;
+  height: 35px;
+  width: 35px;
+}
