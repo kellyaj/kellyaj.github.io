@@ -63,8 +63,8 @@ table {
   background: #fff;
   border: 1px solid black;
   border-radius: 4px;
+  display: inline-block;
   padding: 1.5em;
-  width: 20%;
 }
 
 body {
