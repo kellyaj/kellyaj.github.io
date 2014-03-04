@@ -65,6 +65,7 @@ table {
   border-radius: 4px;
   display: inline-block;
   padding: 1.5em;
+  text-align: center;
 }
 
 body {
