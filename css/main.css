@@ -147,3 +147,13 @@ body {
   height: 35px;
   width: 35px;
 }
+
+.icon-linkedin {
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/linkedin.svg');
+  background-size: 35px 35px;
+  display: inline-block;
+  margin: 0 0 0 0.3em;
+  height: 35px;
+  width: 35px;
+}
