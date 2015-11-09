@@ -1,0 +1,46 @@
+@import url(/bower_components/bootstrap/dist/css/bootstrap.css);
+@import url(/bower_components/font-awesome/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900|Roboto:400,500,900,700);
+header {
+  background: url("/assets/images/header-bg-image.png");
+  font-family: "Orbitron", sans-serif;
+  padding: 20px 0;
+  margin-bottom: 40px; }
+
+.header-title {
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 20px; }
+  .header-title a {
+    color: #FFF; }
+    .header-title a:hover {
+      color: #DCDCDC; }
+
+.about-me {
+  color: #E5E5E5;
+  letter-spacing: 1px;
+  padding: 10px; }
+  .about-me a {
+    color: #97CA41; }
+    .about-me a:hover {
+      color: #B5F151; }
+
+.follow-me .fa {
+  color: #EEEEEE;
+  margin: 15px; }
+  .follow-me .fa:hover {
+    color: #F7F5E2; }
+
+section h1 {
+  font-weight: 700; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  text-align: center; }
+
+a:hover {
+  text-decoration: none; }
+
+/*# sourceMappingURL=application.css.map */

@@ -18,21 +18,17 @@
   </head>
   <body>
     <header>
-      <h1 class="title"> Andrew Kelly </h1>
-      <nav></nav>
+      <h2 class="header-title"> <a href="/"> Andrew Kelly </a> </h2>
+      <h4 class="about-me"> Software Engineer at <a href="http://hireology.com"> Hireology </a> </h4>
+      <div class="follow-me">
+        <a href="http://github.com/kellyaj/"><i class="fa fa-github-square fa-3x"></i></a>
+        <a href="http://twitter.com/_akells/"><i class="fa fa-twitter-square fa-3x"></i></a>
+        <a href="http://www.linkedin.com/pub/andrew-kelly/8b/139/341/"><i class="fa fa-linkedin-square fa-3x"></i></a>
+      </div>
     </header>
-    <section>
-      <article id="about-me">
-      <h2> Software Engineer at <a href="http://hireology.com"> Hireology </a> </h2>
-        <div class="follow-me">
-          <a href="http://github.com/kellyaj/"><i class="fa fa-github-square fa-3x"></i></a>
-          <a href="http://twitter.com/_akells/"><i class="fa fa-twitter-square fa-3x"></i></a>
-          <a href="http://www.linkedin.com/pub/andrew-kelly/8b/139/341/"><i class="fa fa-linkedin-square fa-3x"></i></a>
-        </div>
-      </article>
-      <article id="projects">
-        {{ content }}
-      </article>
+    <section class="projects">
+      <h1> PROJECTS </h1>
+      {{ content }}
     </section>
   </body>
 </html>
