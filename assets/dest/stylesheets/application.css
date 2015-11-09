@@ -32,9 +32,6 @@ header {
   .follow-me .fa:hover {
     color: #F7F5E2; }
 
-section h1 {
-  font-weight: 700; }
-
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
@@ -42,5 +39,29 @@ body {
 
 a:hover {
   text-decoration: none; }
+
+.projects h1 {
+  font-weight: 700;
+  line-height: 2;
+  margin-bottom: 20px;
+  text-decoration: underline; }
+
+.projects-item {
+  display: inline-block;
+  padding: 20px 25px;
+  max-width: 400px; }
+
+.project-name {
+  font-weight: 500; }
+  .project-name a {
+    color: #222; }
+    .project-name a:hover {
+      color: #777; }
+
+.project-tech {
+  background-color: #DDD;
+  margin: 15px auto;
+  max-width: 350px;
+  padding: 10px; }
 
 /*# sourceMappingURL=application.css.map */
