@@ -28,3 +28,12 @@ title: Projects by Andrew Kelly
   <h5 class="project-tech"> Python, Java, Ruby </h5>
   <p>Unbeatable Tic Tac Toe utilizing a minimax algorithm, implemented in <a href="https://github.com/kellyaj/pytactoe">Python</a>, <a href="https://github.com/kellyaj/javattt">Java</a>, and <a href="https://github.com/kellyaj/ttt">Ruby</a>.</p>
 </div>
+<div>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
