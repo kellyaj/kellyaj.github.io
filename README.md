@@ -1,4 +1,1 @@
-ak
-==
-
 jekyll blog
