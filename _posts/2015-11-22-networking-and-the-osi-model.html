@@ -1,6 +1,18 @@
 ---
 layout: post
 title: networking and the osi model
+tags: networking
 published: false
-tags: networkin
 ---
+<p>A <i>protocol</i> is a set of rules that define how information should be transmitted over a network. The International Organization for Standardization made the Open Systems Interconnections Reference Model -- or <i>OSI Model</i> in hopes of creating a standard for network protocols. The OSI Model divides networking into seven distinct layers:</p>
+<ol>
+  <li>7 Application</li>
+  <li>6 Presentation</li>
+  <li>5 Session</li>
+  <li>4 Transport</li>
+  <li>3 Network</li>
+  <li>2 Data Link</li>
+  <li>1 Physical</li>
+</ol>
+<p>Each layer communicates with only the layers above and below it. As messages travel from the Application layer to the Physical layer, headers are added at each layer. When a message arrives at a layer, the headers from the previous layer are combined into the data payload. This process is called <i>encapsulation</i>. </p>
+<p>At the the Physical layer (1), the message is converted into electrical signals that represent bits and then sent across the wire.</p>
