@@ -1,9 +1,18 @@
 ---
-layout: default
+layout: post
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    <link type="text/css" rel="stylesheet" href="assets/dest/stylesheets/application.css">
+  </head>
+  <body>
+    <h2>{{ page.title }}</h2>
+    <p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
-</div>
+    <div class="post">
+    {{ content }}
+    </div>
+  </body>
+</html>

@@ -64,4 +64,7 @@ a:hover {
   max-width: 350px;
   padding: 10px; }
 
+.posts-list {
+  text-decoration: underline; }
+
 /*# sourceMappingURL=application.css.map */

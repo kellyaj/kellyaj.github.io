@@ -1,6 +1,42 @@
 ---
 layout: post
 title: Computer Architecture
-published: false
+published: true
 ---
-<p>The primary source for this post is "Programming from the Ground Up" by Jonathan Bartlett</p>
+<h2>The fetch-execute cycle</h2>
+<p>The CPU reads instructions from memory and then executes them. Memory is composed of numbered addresses, each of which point to a storage location. Data and programs are stored in memory. The CPU performs these operations one instruction at a time. In order to be able to access and change data, the CPU uses the following elements:</p>
+<ul>
+  <li>Program Counter: tells the computer where to get the next instructions</li>
+  <li>Instruction Decoder: figures out what the instructions mean</li>
+  <li>Data bus: the connection between the CPU and memory</li>
+  <li>General purpose registers: memory location on the CPU itself</li>
+  <li>Arithmetic and Logic unit: actually executes the instruction</li>
+</ul>
+
+<h2>Basics of Computer Memory</h2>
+<ul>
+  <li>Address: the number attached to a memory storage location</li>
+  <li>Byte: smallest addressable unit for a CPU. de facto standard of 8 bits. For x86 processes, its a number between 0 and 256</li>
+  <li>Word size: the typical size of a register</li>
+  <li>Pointer: an address stored in memory. Points to a different address</li>
+</ul>
+
+<h2>Addressing modes</h2>
+<p>Different ways to access data</p>
+<ul>
+  <li>Immediate: data to access is embedded in the instruction itself</li>
+  <li>Direct: instruction contains an address to load data from</li>
+  <li>Indexed: instruction contains an address and an offset</li>
+  <li>Indirect: instructions contain a register that contains a pointer</li>
+  <li>Base-pointer: like indirect, but also includes an offset</li>
+</ul>
+
+<h2>Registers</h2>
+<p>Registers are memory locations that live in the CPU itself. Because the registers are actually inside the CPU itself, operations involving registers are fast. When the CPU is performing calculations or manipulating data, the registers are where data is temporarily stored. These registers all have names and some of them have special uses and purposes. For example, the instruction pointer is a special register that contains the address of the next instruction to be fetched from memory and executed.</p>
+
+<h3>Resources:</h3>
+<ul>
+  <li>"Programming from the Ground Up" by Jonathan Bartlett</li>
+  <li>"Assembly Language Step-by-Step: Programming with Linux" by Jeff Duntemann</li>
+</ul>
+
