@@ -35,10 +35,41 @@ header {
 body {
   font-family: "Roboto", sans-serif;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  background-color: #f0f5f5; }
 
 a:hover {
   text-decoration: none; }
+
+.posts-list {
+  background-color: #fff;
+  border: 2px solid black;
+  margin: 0 7em;
+  padding: 15px; }
+
+.post-list-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  list-style-type: none;
+  margin: 0.5em;
+  text-decoration: none; }
+  .post-list-item a {
+    color: #97CA41; }
+
+.post-container {
+  background-color: #fff;
+  border: 2px solid black;
+  margin: 0.5em auto;
+  padding: 30px;
+  width: 60%; }
+
+.post {
+  text-align: left;
+  font-weight: 550; }
+  .post pre {
+    margin: 1.5em auto;
+    text-align: left;
+    width: 80%; }
 
 .projects h1 {
   font-weight: 700;
@@ -63,8 +94,5 @@ a:hover {
   margin: 15px auto;
   max-width: 350px;
   padding: 10px; }
-
-.posts-list {
-  text-decoration: underline; }
 
 /*# sourceMappingURL=application.css.map */

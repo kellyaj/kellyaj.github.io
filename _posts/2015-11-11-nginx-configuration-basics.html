@@ -2,42 +2,58 @@
 layout: post
 title: nginx configuration basics
 tags: nginx
-published: false
+published: true
 ---
 <p>The <code>nginx.conf</code> file is where many settings for nginx live. To locate the <code>nginx.conf</code> file, you might try using a command like:</p>
 
-<p><code>/usr/sbin/nginx -t</code></p>
+<pre>
+  <code>/usr/sbin/nginx -t</code>
+</pre>
 
 <p>Note: the path to the nginx binary might be different, you can always check the output of <code>ps aux | grep nginx</code> to find where nginx might live.</p>
 
-<p>The nginx configuration file may have a number of named <i>contexts</i>. Sometimes contained within nested curly braces, nginx contexts let you specify configuration inheritance among different sub-contexts. Any key-value pairs not within a namespaced curly brace is considered to be part of the main context. Some contexts contain configurations that nginx will use when responding to incoming requests, like the <code>events</code>, <code>http</code>, or <code>server</code> contexts.</p>
+<p>The nginx configuration file may have a number of named <i>contexts</i>. Sometimes contained within nested curly braces, nginx contexts let you specify configuration inheritance among different sub-contexts. Any key-value pairs not within a namespaced cury brace is considered to be part of the main context. Some contexts contain configurations that nginx will use when responding to incoming requests, like the <code>events</code>, <code>http</code>, or <code>server</code> contexts.</p>
 
 <p>Consider this example configuration:</p>
 
-<code>
-  worker_processes 1;
+<pre>
+  <code>
+    user nobody nogroup;
+    worker_processes 1;
 
-  error_log /var/log/nginx/error.log;
-  pid       /var/run/nginx.pid;
+    error_log /var/log/nginx/error.log;
+    pid       /var/run/nginx.pid;
 
-  events {
-    worker_connections 1024;
-  }
-  http {
-    server {
-      listen *:80;
-      server_name "";
-      root /some/app/dir/public;
+    events {
+      worker_connections 1024;
     }
-  }
-</code>
+    http {
+      server {
+        listen *:80;
+        server_name examplehost.com;
+        root /some/app/dir/public;
+      }
+    }
+  </code>
+</pre>
+
+<p>The keys such as <code>user</code>, <code>worker_processes</code>, <code>pid</code>, and so on are called <i>directives</i>. Their values are called <i>properties</i>. Directives that are not part of a sub-context are called <i>global directives</i> and typically affect the overall server configuration itself.</p>
+
+<p>The global directives in the above example are:</p>
+<ul>
+  <li><code>user nobody nogroup</code>: the <code>user</code> directive determines what credentials worker processes will use</li>
+  <li><code>worker_processes</code>: determines how many workers nginx will use</li>
+  <li><code>error_log</code>:  where nginx puts errors it encounters</li>
+  <li><code>pid</code>: contains the pid number of the nginx process</li>
+</ul>
+
+<p>Other directives live inside sub-contexts, such as:</p>
 
 <ul>
-  <li><code>worker_processes</code> determines how many workers nginx will use</li>
-  <li><code>user nobody nogroup</code> the <code>user</code> directive determines what credentials worker processes will use</li>
-  <li><code>error_log</code> is where nginx puts errors it encounters</li>
-  <li><code>pid</code> contains the pid number of the nginx process</li>
-  <li><code>worker_connections</code> configures how many simultaneous connections a worker process will accept, the default is 512</li>
-  <li><code>server_name</code> gets compared against the <code>Host</code> header of incoming HTTP requests</li>
-  <li><code>root</code> determines which files to serve public assets from</li>
+  <li><code>worker_connections</code>: configures how many simultaneous connections a worker process will accept, the default is 512</li>
+  <li><code>listen</code>: binds to a port to listen for connections</li>
+  <li><code>server_name</code>: gets compared against the <code>Host</code> header of incoming HTTP requests</li>
+  <li><code>root</code>: determines which files to serve public assets from</li>
 </ul>
+
+<p>Using contexts and directives, the <code>nginx.conf</code> configures the server and extends its functionality.</p>
